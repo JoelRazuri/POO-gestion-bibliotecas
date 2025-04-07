@@ -12,3 +12,5 @@ class Librarian():
         if book in library.books:
             library.books.remove(book)
             print(f'Libro {book.title} eliminado del sistema.')
+        else:
+            print(f'Este libro: {book.title}, no está registrado en la biblioteca')
