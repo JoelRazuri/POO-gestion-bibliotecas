@@ -41,3 +41,9 @@ class Library:
         print('--------------')
         for user in self.users:
             print(f'Nombre: {user.name}, Email: {user.email}')
+
+    def lists_librarians(self):
+        print('Lista Bibliotecarios:')
+        print('--------------')
+        for librarian in self.librarians:
+            print(f'Nombre: {librarian.name}')
