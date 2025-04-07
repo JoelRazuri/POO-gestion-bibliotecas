@@ -15,27 +15,9 @@ class Book():
                 ISBN: {self.isbn_book},
                 Editorial: {self.editorial},
                 Fecha de publicación: {self.publish_date},
-                Disponibilidad: {self.available}
                 """
 
-    def update_available(self):
-        if self.available:
-            self.available = False
-            return self.available
-        else:
-            self.available = True
-            return self.available
-
-        return f"Hubo un error, intentelo de nuevo"
-
-
-# Pruebas
-# libro = Book('Iron Man: El primer Vengador', 'Stan Lee', 'M1827', 'Marvel Studios', '03/03/1967', True)
-
-# print(libro)
-
-# libro.update_available()
-# print(libro)
-
-# libro.update_available()
-# print(libro)
+    def update_available(self, available):
+        self.available = available
+        state = 'disponible' if available else 'no disponible'
+        print(f'El libro {self.title} ahora está {state}')
