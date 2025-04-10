@@ -18,7 +18,7 @@ class Library:
             print(f'El usuario {user.name} no se encuentra en el sistema.')
 
     def add_librarian(self, librarian):
-        self.users.append(librarian)
+        self.librarians.append(librarian)
         print(f'El bibliotecario {librarian.name} fue registrado en el sistema.')
     
     def delete_librarian(self, librarian):
@@ -36,14 +36,14 @@ class Library:
             print(book)
             print('#######')
     
-    def lists_useres(self):
+    def lists_users(self):
         print('Lista Usuarios:')
         print('--------------')
         for user in self.users:
-            print(f'Nombre: {user.name}, Email: {user.email}')
+            print(f'ID: {user.id_user} | Nombre: {user.name} | Email: {user.email}')
 
     def lists_librarians(self):
         print('Lista Bibliotecarios:')
         print('--------------')
         for librarian in self.librarians:
-            print(f'Nombre: {librarian.name}')
+            print(f'ID: {librarian.id_librarian} | Nombre: {librarian.name}')
